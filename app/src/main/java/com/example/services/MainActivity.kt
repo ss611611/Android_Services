@@ -14,11 +14,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.apply {
             btnStart.setOnClickListener {
-                startService(Intent(this@MainActivity,MyService::class.java))
+                startService(Intent(this@MainActivity, MyService::class.java))
             }
 
             btnStop.setOnClickListener {
-                stopService(Intent(this@MainActivity,MyService::class.java))
+                stopService(Intent(this@MainActivity, MyService::class.java))
             }
         }
     }
